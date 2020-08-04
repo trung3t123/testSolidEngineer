@@ -1,75 +1,135 @@
+# SOLID engineer ReactJS assessment (Level Junior)
 
 
-## Setup environment
+### This document is a test statement providing necessary information to assess the Candidate's coding requirements for a developer role at SOLID engineer.
 
-Follow these steps
+1. **How to use:** Please `fork` the repo and make changes following below instructions.
 
-```terminal
-yarn install
+2. **Before you start:**
+- The React.js source is already connected to the sample API. https://api.opendota.com declared in `.env` file
+
+  - [Hero stats documents](https://docs.opendota.com/#tag/hero-stats%2Fpaths%2F~1heroStats%2Fget)
+
+1. **Requirement:**
+- Create a "DOTA2 Heroes info" Web App which allows the user to see the list of Heroes, detail info about a hero.
+
+- At detail:
+  - Click on the `Heroes` menu item should show the listing of all heroes.
+  - Click on a specific Hero should display this Hero infomation
+
+  **DEMO SCREEN SHOTS**
+
+<div style="text-align: center;">
+
+  ![](images/heroes-list-page.png)
+  *hero list page*
+
+  </div>
+
+  <div style="text-align: center;">
+
+  ![](images/hero-detail-page.png)
+  *hero detail page*
+
+  </div>
+
+  ### Feel free to custom & display your page, before images are just a demo for easily imagine
+
+- `Create/Update/Delete` functions are `NOT` needed, just get all Heroes AND display them.
+
+
+
+## Get Started
+
+A Node.js 8.0.0+ setup with [yarn](https://yarnpkg.com/) is recommended.
+
+```bash
+# install dependencies
+yarn
+
+# ...or if you'd like to use npm instead
+npm install
+
+# serve with hot reload at localhost:3000
+yarn start
+
+# build for production
+yarn build
 ```
 
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Example heroes stats api response
+```javascript
+[
+  {
+        "id": 1,
+        "name": "npc_dota_hero_antimage",
+        "localized_name": "Anti-Mage",
+        "primary_attr": "agi",
+        "attack_type": "Melee",
+        "roles": [
+            "Carry",
+            "Escape",
+            "Nuker"
+        ],
+        "img": "/apps/dota2/images/heroes/antimage_full.png?",
+        "icon": "/apps/dota2/images/heroes/antimage_icon.png",
+        "base_health": 200,
+        "base_health_regen": 0.25,
+        "base_mana": 75,
+        "base_mana_regen": 0,
+        "base_armor": -1,
+        "base_mr": 25,
+        "base_attack_min": 29,
+        "base_attack_max": 33,
+        "base_str": 23,
+        "base_agi": 24,
+        "base_int": 12,
+        "str_gain": 1.3,
+        "agi_gain": 3,
+        "int_gain": 1.8,
+        "attack_range": 150,
+        "projectile_speed": 0,
+        "attack_rate": 1.4,
+        "move_speed": 310,
+        "turn_rate": 0.5,
+        "cm_enabled": true,
+        "legs": 2,
+        "pro_ban": 808,
+        "hero_id": 1,
+        "pro_win": 135,
+        "pro_pick": 259,
+        "1_pick": 15541,
+        "1_win": 8040,
+        "2_pick": 36511,
+        "2_win": 19412,
+        "3_pick": 55515,
+        "3_win": 29630,
+        "4_pick": 60916,
+        "4_win": 32402,
+        "5_pick": 44470,
+        "5_win": 23456,
+        "6_pick": 21222,
+        "6_win": 11132,
+        "7_pick": 9325,
+        "7_win": 4912,
+        "8_pick": 2247,
+        "8_win": 1127,
+        "null_pick": 2501360,
+        "null_win": 0
+    },
+]
+```
+
+
+1. **Expected output:**
+- A video or screenshots showing a web app running on your localhost
+- The web app source code (your github repo you forked)
+- A 5-minutes call to explain how you built this web app.
+
+1. **Total time of this exercise:** maximum 5 hour in 1 day.
+
+
+

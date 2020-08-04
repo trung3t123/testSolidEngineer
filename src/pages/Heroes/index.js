@@ -3,6 +3,7 @@ import PageLayout from 'components/PageLayout';
 import { fetchHeroes } from './control';
 
 function Heroes() {
+  // eslint-disable-next-line no-unused-vars
   const [heroes, setHeroes] = useState([]);
 
   useEffect(() => {
