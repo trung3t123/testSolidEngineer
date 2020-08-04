@@ -17,27 +17,27 @@
   - Click on the `Heroes` menu item should show the listing of all heroes.
   - Click on a specific Hero should display this Hero infomation
 
+- `Create/Update/Delete` functions are `NOT` needed, just get all Heroes AND display them.
+
+
   **DEMO SCREEN SHOTS**
 
-<div style="text-align: center;">
+<div align="center">
 
   ![](images/heroes-list-page.png)
   *hero list page*
 
   </div>
 
-  <div style="text-align: center;">
+  <div align="center">
 
   ![](images/hero-detail-page.png)
   *hero detail page*
 
   </div>
 
-  ### Feel free to custom & display your page, before images are just a demo for easily imagine
 
-- `Create/Update/Delete` functions are `NOT` needed, just get all Heroes AND display them.
-
-
+### Feel free to custom & display your page, before images are just a demo for easily imagine
 
 ## Get Started
 
@@ -124,12 +124,12 @@ Example heroes stats api response
 ```
 
 
-1. **Expected output:**
+# Expected output
 - A video or screenshots showing a web app running on your localhost
 - The web app source code (your github repo you forked)
 - A 5-minutes call to explain how you built this web app.
 
-1. **Total time of this exercise:** maximum 5 hour in 1 day.
+### Total time of this exercise: **maximum 5 hour in 1 day**
 
 
 
