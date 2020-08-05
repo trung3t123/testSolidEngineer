@@ -1,0 +1,149 @@
+.heroDetails-container {
+    padding-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container {
+    background-color: #e8e8e7;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.cover-image {
+    position: absolute;
+    filter: blur(20px);
+}
+
+.hero-avatar {
+    flex: 1;
+    border-radius: 15px;
+}
+
+.cover-image-container {
+    filter: brightness(30%);
+    height: 600px;
+    border-radius: 15px;
+    border: solid 0.1px black;
+    overflow: hidden;
+}
+
+.hero-type-name {
+    margin-top: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.hero-details-stats-container {
+    flex: 1;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    color: #fbfbfb;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stats-atributes-container {
+    margin-top: 20px;
+    flex: 1;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    width: max-content;
+    flex-direction: row;
+    display: flex;
+    height: 60px;
+    background-color: black;
+}
+
+.attribute {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.hero-details {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.details-row1 {
+    margin-right: 10%;
+    padding-left: 5px;
+    display: flex;
+    font-size: 16px;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 0.5px;
+    border-color: rgb(122, 122, 122);
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.category-style{
+    color: #585857;
+}
+
+
+.details-row2 {
+    padding-left: 5px;
+
+    margin-right: 10%;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    border-bottom: solid;
+    border-width: 0.5px;
+    border-color: rgb(202, 195, 195);
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(175, 166, 175);
+}
+
+.details-col1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-col2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-col3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-col4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
