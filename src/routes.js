@@ -17,7 +17,6 @@ import HeroDetails from 'pages/HeroDetails/HeroDetails';
  */
 import Header from 'components/layout/Header';
 
-
 function Routes() {
   return (
     <>
@@ -26,7 +25,7 @@ function Routes() {
         <Switch>
           <Route key="a" exact path={ROUTES.HOME} component={Home} />
           <Route key="b" exact path={ROUTES.HEROES} component={Heroes} />
-          <Route path={ROUTES.HERODETAILS} component={HeroDetails}/>
+          <Route path={ROUTES.HERODETAILS} component={HeroDetails} />
 
           <Route component={() => <div>Not Found</div>} />
         </Switch>
